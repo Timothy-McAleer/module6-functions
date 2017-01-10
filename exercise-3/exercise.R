@@ -38,3 +38,27 @@
 
 
 # Which is bigger, `round.sum` or `sum.round`? (You can use the `max()` function!)
+
+my.name <- "Timothy McAleer"
+name.length <- nchar(my.name)
+
+print(name.length)
+
+now.doing <- paste(my.name, "is programming!")
+
+now.doing <- toupper(now.doing)
+
+fav.1 <- 70
+fav.2 <- 8
+fav.1 <- fav.1 / sqrt(201)
+fav.2 <- fav.2 / sqrt(201)
+
+raw.sum <- sum(fav.1, fav.2)
+round.sum <- round(raw.sum, 1)
+
+round.1 <- round(fav.1, 1)
+round.2 <- round(fav.2, 1)
+
+sum.round <- round.1 + round.2
+
+max(sum.round, round.sum)
